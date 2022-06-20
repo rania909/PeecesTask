@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Timer</title>
+    <style>
+        .button {
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+        }
+        
+        
+        .button2 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid #008CBA;
+        }
+        
+        .button2:hover {
+          background-color: #008CBA;
+          color: white;
+        }
+        </style>
+</head>
+<body>
+    <form class="grid" action="/past" method="post">
+    <h1>Current time : {{content1}}</h1> 
+    <button class="button button2">Change</button>
+    <h1>One hour ago time : {{content2}}</h1>
+
+    </form>
+</body>
+</html>
